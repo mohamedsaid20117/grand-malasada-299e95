@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KDD4W8CG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tNoa1fvMB5ayx4sufKIfoOIAjXrePpOdTzSw_GTE_nk" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234f46e5' stroke-width='2'%3E%3Crect x='4' y='2' width='16' height='20' rx='2'/%3E%3Cline x1='8' y1='6' x2='16' y2='6'/%3E%3C/svg%3E" />
+  <title>أدواتي الذكية | منصة الحاسبات والأدوات الرقمية الشاملة</title>
+  <meta name="description" content="منصة عربية شاملة تضم حاسبة الذهب والعملات، حاسبة القروض، تحويل الصور والملفات، حاسبة العمر، وحاسبة السعرات الحرارية ومؤشر كتلة الجسم." />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cairo', 'Inter', 'sans-serif'],
+            mono: ['Inter', 'monospace']
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#4f46e5',
+              600: '#4338ca',
+              700: '#3730a3',
+              900: '#1e1b4b'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Cairo', 'Inter', sans-serif;
+    }
+    .ad-slot-pattern {
+      background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+      background-size: 12px 12px;
+    }
+    .dark .ad-slot-pattern {
+      background-image: radial-gradient(#334155 1px, transparent 1px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #475569;
+    }
+  </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6133817671472706" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 min-h-screen flex flex-col transition-colors duration-200">
+
+  <!-- Toast Notification -->
+  <div id="toastContainer" class="fixed bottom-5 left-5 z-50 hidden transition-all duration-300">
+    <div class="bg-slate-900 dark:bg-indigo-600 text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 text-sm font-medium border border-slate-700">
+      <svg class="w-5 h-5 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+      </svg>
+      <span id="toastMessage">تمت العملية بنجاح</span>
+    </div>
+  </div>
+
+  <!-- Top Owner Control Bar (AdSense Preview & Site Owner Mode) -->
+  <div class="bg-indigo-950 text-indigo-100 text-xs py-2 px-4 border-b border-indigo-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="bg-amber-400 text-slate-950 font-bold px-2 py-0.5 rounded text-[11px]">لوحة تحكم المالك</span>
+        <span>الموقع مجهز بالكامل للربط مع Google AdSense ومحركات البحث (SEO)</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="toggleAdsBtn" type="button" class="bg-indigo-800 hover:bg-indigo-700 text-white px-3 py-1 rounded-lg transition font-medium flex items-center gap-1.5">
+          <span id="adsStatusDot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span id="toggleAdsText">إخفاء معاينة الإعلانات</span>
+        </button>
+        <button id="openAdsenseGuideBtn" type="button" class="bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1 rounded-lg transition font-semibold">
+          دليل ربط AdSense وحاسبة الأرباح
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="bg-white/90 dark:bg-slate-900/90 backdrop-blur sticky top-0 z-40 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+      <!-- Brand -->
+      <button id="brandHomeBtn" type="button" class="flex items-center gap-3 text-right group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="text-xl font-extrabold bg-gradient-to-l from-indigo-600 to-violet-600 dark:from-indigo-400 dark:to-violet-400 bg-clip-text text-transparent block">أدواتي الذكية</span>
+          <span class="text-xs text-slate-500 dark:text-slate-400 block">حاسبات مالية، صحية، وتحويل ملفات فوري</span>
+        </div>
+      </button>
+
+      <!-- Navigation Pills -->
+      <nav class="flex items-center gap-1.5 overflow-x-auto max-w-full py-1" aria-label="الأدوات الرئيسية">
+        <button type="button" data-tab="gold" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap bg-indigo-600 text-white shadow-sm">
+          الذهب والعملات
+        </button>
+        <button type="button" data-tab="loan" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          حاسبة القروض
+        </button>
+        <button type="button" data-tab="converter" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          تحويل الملفات والوحدات
+        </button>
+        <button type="button" data-tab="age" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          حاسبة العمر
+        </button>
+        <button type="button" data-tab="health" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+          السعرات الحرارية و BMI
+        </button>
+        <button type="button" data-tab="adsense" class="nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100">
+          مركز AdSense
+        </button>
+      </nav>
+
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center gap-2">
+        <button id="darkModeBtn" type="button" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-slate-700 transition" title="تبديل الوضع الليلي">
+          <svg id="sunIcon" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <svg id="moonIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Top Header AdSense Slot (728x90 Responsive Leaderboard) -->
+  <div class="ad-unit-container max-w-7xl mx-auto px-4 pt-4 w-full">
+    <div class="ad-slot-pattern bg-white dark:bg-slate-900 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-3 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
+      <div class="flex items-center gap-3">
+        <span class="bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs font-bold px-2.5 py-1 rounded-md border border-amber-300 dark:border-amber-700">إعلان Google AdSense</span>
+        <div>
+          <p class="text-sm font-bold text-slate-700 dark:text-slate-200">مساحة إعلانية علوية متجاوبة (Leaderboard 728×90 / Responsive)</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400">تظهر أعلى جميع الأدوات وتحقق أعلى نسبة نقر (CTR) في مواقع الأدوات الخدمية</p>
+        </div>
+      </div>
+      <button type="button" data-copy-ad="header" class="copy-ad-code-btn shrink-0 text-xs bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 dark:hover:bg-indigo-950 text-indigo-600 dark:text-indigo-400 font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 transition">
+        نسخ كود الوحدة الإعلانية
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Content Grid -->
+  <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- Primary Tool Area (8 cols on lg) -->
+    <div class="lg:col-span-8 space-y-6">
+
+      <!-- ==================== TAB 1: GOLD & CURRENCY CALCULATOR ==================== -->
+      <section id="tab-gold" class="tool-section space-y-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex flex-wrap items-center justify-between gap-4 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h1 class="text-xl font-extrabold text-slate-900 dark:text-white">حاسبة الذهب والمصنعية والعملات</h1>
+                <p class="text-sm text-slate-500 dark:text-slate-400">احسب قيمة الذهب بجميع الأعيرة والمصنعية وزكاة الذهب وتحويل العملات اللحظي</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <label for="goldCurrencySelect" class="text-xs font-bold text-slate-500">العملة:</label>
+              <select id="goldCurrencySelect" class="bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-1.5 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="EGP">جنيه مصري (EGP)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+                <option value="AED">درهم إماراتي (AED)</option>
+                <option value="USD">دولار أمريكي (USD)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Gold Calculator Form -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div>
+              <label for="goldKarat" class="block text-sm font-bold mb-1.5 text-slate-700 dark:text-slate-300">عيار الذهب</label>
+              <select id="goldKarat" class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <option value="24">عيار 24 (نقاء 99.9%)</option>
+                <option value="22">عيار 22 (نقاء 91.6%)</option>
+                <option value="21" selected>عيار 21 (الأكثر تداولاً - 87.5%)</option>
+                <option value="18">عيار 18 (نقاء 75.0%)</option>
+                <option value="14">عيار 14 (نقاء 58.3%)</option>
+              </select>
+            </div>
+            <div>
+              <label for="goldGramPrice21" class="block text-sm font-bold mb-1.5 text-slate-700 dark:text-slate-300">سعر جرام عيار 21 اليوم</label>
+              <input id="goldGramPrice21" type="number" min="1" step="any" value="3750" class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+            <div>
+              <label for="goldWeight" class="block text-sm font-bold mb-1.5 text-slate-700 dark:text-slate-300">الوزن بالجرام</label>
+              <input id="goldWeight" type="number" min="0.1" step="0.1" value="15" class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+            <div>
+              <label for="goldMakingCharge" class="block text-sm font-bold mb-1.5 text-slate-700 dark:text-slate-300">المصنعية والدمغة لكل جرام</label>
+              <input id="goldMakingCharge" type="number" min="0" step="any" value="150" class="w-full bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            </div>
+          </div>
+
+          <!-- Quick Presets -->
+          <div class="flex flex-wrap items-center gap-2 mb-6">
+            <span class="text-xs font-bold text-slate-500">أوزان سريعة:</span>
+            <button type="button" data-gold-preset="8" data-karat="21" class="gold-preset-btn text-xs bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 px-3 py-1.5 rounded-lg font-semibold hover:bg-amber-100 transition">جنيه ذهب (8 جرام عيار 21)</button>
+            <button type="button" data-gold-preset="31.1035" data-karat="24" class="gold-preset-btn text-xs bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 px-3 py-1.5 rounded-lg font-semibold hover:bg-amber-100 transition">أونصة ذهب (31.1 جرام عيار 24)</button>
+            <button type="button" data-gold-preset="85" data-karat="21" class="gold-preset-btn text-xs bg-amber-50 dark:bg-amber-950/50 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-800 px-3 py-1.5 rounded-lg font-semibold hover:bg-amber-100 transition">نصاب الزكاة (85 جرام عيار 21)</button>
+          </div>
+
+          <!-- Gold Results Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-amber-500 to-yellow-600 text-white rounded-2xl p-4 shadow-md">
+              <span class="text-xs font-medium opacity-90 block">الإجمالي شامل المصنعية</span>
+              <span id="goldTotalWithMaking" class="text-2xl font-extrabold mt-1 block">58,500 EGP</span>
+              <span id="goldSelectedUnitPrice" class="text-xs opacity-90 mt-1 block">سعر الجرام: 3,750 EGP</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">قيمة الذهب الخام (بدون مصنعية)</span>
+              <span id="goldPureValue" class="text-xl font-extrabold text-slate-900 dark:text-white mt-1 block">56,250 EGP</span>
+              <span id="goldTotalMakingValue" class="text-xs text-slate-500 dark:text-slate-400 mt-1 block">إجمالي المصنعية: 2,250 EGP</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800/90 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">حالة زكاة الذهب (2.5%)</span>
+              <span id="goldZakatValue" class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400 mt-1 block">أقل من النصاب</span>
+              <span id="goldZakatNote" class="text-xs text-slate-500 dark:text-slate-400 mt-1 block">النصاب 85 جرام عيار 21</span>
+            </div>
+          </div>
+
+          <!-- All Karats Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm text-right border-collapse">
+              <thead>
+                <tr class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                  <th class="py-2.5 px-3 rounded-r-xl font-bold">العيار / الوحدة</th>
+                  <th class="py-2.5 px-3 font-bold">نسبة النقاء</th>
+                  <th class="py-2.5 px-3 font-bold">سعر الجرام / الوحدة</th>
+                  <th class="py-2.5 px-3 rounded-l-xl font-bold">قيمة الوزن الحالي</th>
+                </tr>
+              </thead>
+              <tbody id="goldKaratsTableBody" class="divide-y divide-slate-100 dark:divide-slate-800"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Currency Converter Section -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <h2 class="text-lg font-extrabold text-slate-900 dark:text-white mb-1">محول العملات الفوري</h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-5">حول بين العملات العربية والعالمية مع إمكانية تعديل سعر الصرف يدوياً</p>
+
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+            <div class="md:col-span-4">
+              <label for="currAmount" class="block text-xs font-bold mb-1.5 text-slate-600 dark:text-slate-300">المبلغ</label>
+              <input id="currAmount" type="number" min="0" step="any" value="100" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div class="md:col-span-3">
+              <label for="currFrom" class="block text-xs font-bold mb-1.5 text-slate-600 dark:text-slate-300">من عملة</label>
+              <select id="currFrom" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="USD" selected>دولار أمريكي (USD)</option>
+                <option value="EGP">جنيه مصري (EGP)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+                <option value="AED">درهم إماراتي (AED)</option>
+                <option value="EUR">يورو أوروبي (EUR)</option>
+                <option value="KWD">دينار كويتي (KWD)</option>
+                <option value="GBP">جنيه إسترليني (GBP)</option>
+              </select>
+            </div>
+            <div class="md:col-span-2 flex justify-center">
+              <button id="swapCurrBtn" type="button" class="w-full md:w-auto px-4 py-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-100 font-bold text-sm transition flex items-center justify-center gap-1" title="تبديل العملتين">
+                <span>⇄</span>
+                <span class="md:hidden">تبديل</span>
+              </button>
+            </div>
+            <div class="md:col-span-3">
+              <label for="currTo" class="block text-xs font-bold mb-1.5 text-slate-600 dark:text-slate-300">إلى عملة</label>
+              <select id="currTo" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="USD">دولار أمريكي (USD)</option>
+                <option value="EGP" selected>جنيه مصري (EGP)</option>
+                <option value="SAR">ريال سعودي (SAR)</option>
+                <option value="AED">درهم إماراتي (AED)</option>
+                <option value="EUR">يورو أوروبي (EUR)</option>
+                <option value="KWD">دينار كويتي (KWD)</option>
+                <option value="GBP">جنيه إسترليني (GBP)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mt-5 p-4 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <span class="text-xs text-slate-500 dark:text-slate-400 block">نتيجة التحويل</span>
+              <span id="currResultText" class="text-2xl font-extrabold text-indigo-700 dark:text-indigo-300">4,920.00 EGP</span>
+            </div>
+            <div class="text-left">
+              <span id="currRateSubtext" class="text-xs font-semibold text-slate-600 dark:text-slate-400 block">1 USD = 49.20 EGP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 2: LOAN CALCULATOR ==================== -->
+      <section id="tab-loan" class="tool-section hidden space-y-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex items-center gap-3 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-2xl bg-indigo-100 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">حاسبة القروض والتمويل الشخصي والعقاري</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">احسب القسط الشهري، إجمالي الفوائد، وجدول السداد التفصيلي (فائدة متناقصة أو ثابتة)</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div>
+              <label for="loanAmount" class="block text-sm font-bold mb-1.5">قيمة القرض / التمويل</label>
+              <input id="loanAmount" type="number" min="1000" step="1000" value="200000" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="loanRate" class="block text-sm font-bold mb-1.5">نسبة الفائدة السنوية (%)</label>
+              <input id="loanRate" type="number" min="0.1" max="100" step="0.1" value="18" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="loanMonths" class="block text-sm font-bold mb-1.5">مدة القرض (بالأشهر)</label>
+              <input id="loanMonths" type="number" min="1" max="360" step="1" value="36" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="loanType" class="block text-sm font-bold mb-1.5">نوع الفائدة البنكية</label>
+              <select id="loanType" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold">
+                <option value="diminishing" selected>فائدة متناقصة (الأكثر شيوعاً)</option>
+                <option value="flat">فائدة ثابتة (مقطوعة)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Loan Summary Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-indigo-600 to-violet-700 text-white rounded-2xl p-4 shadow-md">
+              <span class="text-xs opacity-90 block">القسط الشهري المطلوب</span>
+              <span id="loanMonthlyPayment" class="text-2xl font-extrabold mt-1 block">7,230.48</span>
+              <span class="text-xs opacity-80 mt-1 block">ثابت طوال فترة السداد</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">إجمالي الفوائد البنكية</span>
+              <span id="loanTotalInterest" class="text-xl font-extrabold text-rose-600 dark:text-rose-400 mt-1 block">60,297.25</span>
+              <span id="loanInterestRatio" class="text-xs text-slate-500 mt-1 block">نسبة الفائدة للإجمالي: 23.2%</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">إجمالي المبلغ المسدد</span>
+              <span id="loanTotalPayment" class="text-xl font-extrabold text-slate-900 dark:text-white mt-1 block">260,297.25</span>
+              <span class="text-xs text-slate-500 mt-1 block">أصل القرض + الفوائد</span>
+            </div>
+          </div>
+
+          <!-- Visual Breakdown Bar -->
+          <div class="mb-6">
+            <div class="flex justify-between text-xs font-bold mb-1.5">
+              <span class="text-indigo-600 dark:text-indigo-400">أصل القرض (<span id="loanPrincipalPct">77%</span>)</span>
+              <span class="text-rose-500">الفوائد (<span id="loanInterestPct">23%</span>)</span>
+            </div>
+            <div class="w-full h-3.5 bg-rose-500 rounded-full overflow-hidden flex">
+              <div id="loanPrincipalBar" class="bg-indigo-600 h-full transition-all duration-300" style="width: 77%"></div>
+            </div>
+          </div>
+
+          <!-- Amortization Schedule Table -->
+          <div>
+            <h3 class="text-sm font-bold text-slate-700 dark:text-slate-200 mb-3">جدول الأقساط الشهرية التفصيلي</h3>
+            <div class="max-h-64 overflow-y-auto custom-scrollbar border border-slate-200 dark:border-slate-800 rounded-2xl">
+              <table class="w-full text-xs text-right">
+                <thead class="bg-slate-100 dark:bg-slate-800 sticky top-0 text-slate-600 dark:text-slate-300">
+                  <tr>
+                    <th class="py-2.5 px-3 font-bold">الشهر</th>
+                    <th class="py-2.5 px-3 font-bold">القسط الشهري</th>
+                    <th class="py-2.5 px-3 font-bold">أصل المبلغ</th>
+                    <th class="py-2.5 px-3 font-bold">الفائدة</th>
+                    <th class="py-2.5 px-3 font-bold">الرصيد المتبقي</th>
+                  </tr>
+                </thead>
+                <tbody id="loanScheduleBody" class="divide-y divide-slate-100 dark:divide-slate-800"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 3: FILE & UNIT CONVERTER ==================== -->
+      <section id="tab-converter" class="tool-section hidden space-y-6">
+        <!-- Image Converter & Compressor -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex items-center gap-3 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">محول وضغط الصور والملفات الفوري</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">حول صيغ الصور (PNG, JPG, WebP) واضغط حجمها مباشرة داخل المتصفح بدون رفع لسيرفر خارجي</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
+            <div>
+              <label for="imgUploadInput" class="block text-xs font-bold mb-1.5">اختر صورة (أو استخدم العينة الجاهزة)</label>
+              <input id="imgUploadInput" type="file" accept="image/*" class="w-full text-xs bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-2" />
+            </div>
+            <div>
+              <label for="imgTargetFormat" class="block text-xs font-bold mb-1.5">الصيغة المطلوبة</label>
+              <select id="imgTargetFormat" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm font-bold">
+                <option value="image/webp" selected>WebP (أفضل ضغط للويب)</option>
+                <option value="image/jpeg">JPEG / JPG</option>
+                <option value="image/png">PNG (جودة كاملة)</option>
+              </select>
+            </div>
+            <div>
+              <label for="imgQualityRange" class="block text-xs font-bold mb-1.5">جودة الضغط: <span id="imgQualityLabel">80%</span></label>
+              <input id="imgQualityRange" type="range" min="10" max="100" value="80" class="w-full accent-indigo-600 mt-2" />
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <canvas id="converterCanvas" width="320" height="180" class="w-24 h-14 rounded-lg border border-slate-300 dark:border-slate-600 object-cover bg-white"></canvas>
+              <div>
+                <p id="convertedFileInfo" class="text-sm font-bold text-slate-800 dark:text-slate-100">صورة جاهزة للتحويل (WebP - جودة 80%)</p>
+                <p id="convertedSizeInfo" class="text-xs text-emerald-600 dark:text-emerald-400 font-semibold">الحجم المقدر بعد التحويل: ~12 KB</p>
+              </div>
+            </div>
+            <button id="downloadConvertedImgBtn" type="button" class="bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl text-sm font-bold transition shadow-sm">
+              تنزيل الصورة المحولة
+            </button>
+          </div>
+        </div>
+
+        <!-- Smart Unit Converter -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <h3 class="text-lg font-extrabold text-slate-900 dark:text-white mb-4">محول الوحدات القياسية والرقمية</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 items-end">
+            <div>
+              <label for="unitCategory" class="block text-xs font-bold mb-1">نوع الوحدة</label>
+              <select id="unitCategory" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="length">الطول والمسافة</option>
+                <option value="weight">الوزن والكتلة</option>
+                <option value="data">مساحة البيانات الرقمية</option>
+              </select>
+            </div>
+            <div>
+              <label for="unitValue" class="block text-xs font-bold mb-1">القيمة</label>
+              <input id="unitValue" type="number" value="10" step="any" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="unitFrom" class="block text-xs font-bold mb-1">من</label>
+              <select id="unitFrom" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold"></select>
+            </div>
+            <div>
+              <label for="unitTo" class="block text-xs font-bold mb-1">إلى</label>
+              <select id="unitTo" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold"></select>
+            </div>
+          </div>
+          <div class="mt-4 p-4 rounded-2xl bg-indigo-50/70 dark:bg-indigo-950/30 border border-indigo-100 dark:border-indigo-900">
+            <span class="text-xs text-slate-500 block">النتيجة الدقيقة:</span>
+            <span id="unitResultOutput" class="text-xl font-extrabold text-indigo-700 dark:text-indigo-300">10,000 متر</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 4: AGE CALCULATOR ==================== -->
+      <section id="tab-age" class="tool-section hidden space-y-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex items-center gap-3 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-2xl bg-violet-100 dark:bg-violet-950/60 text-violet-600 dark:text-violet-400 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">حاسبة العمر الدقيقة بالميلادي والهجري</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">اعرف عمرك بالسنوات والأشهر والأيام والساعات والعد التنازلي لعيد ميلادك القادم</p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-end gap-4 mb-6">
+            <div class="flex-1 min-w-[220px]">
+              <label for="birthDateInput" class="block text-sm font-bold mb-1.5">تاريخ الميلاد</label>
+              <input id="birthDateInput" type="date" value="1998-05-15" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <button id="calcAgeBtn" type="button" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-xl text-sm font-bold transition shadow-sm">
+              احسب العمر الآن
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-violet-600 to-indigo-700 text-white rounded-2xl p-4 shadow-md">
+              <span class="text-xs opacity-90 block">العمر بالميلادي</span>
+              <span id="ageYearsMonthsDays" class="text-xl font-extrabold mt-1 block">28 سنة، 5 شهر، 23 يوم</span>
+              <span id="ageBornDayName" class="text-xs opacity-85 mt-1 block">ولدت في يوم: الجمعة</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">العمر التقريبي بالهجري</span>
+              <span id="ageHijriEstimate" class="text-xl font-extrabold text-slate-900 dark:text-white mt-1 block">29 سنة و 4 أشهر هجرية</span>
+              <span class="text-xs text-slate-500 mt-1 block">حساب وفق السنة القمرية (354.36 يوم)</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">عيد ميلادك القادم بعد</span>
+              <span id="ageNextBirthday" class="text-xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1 block">189 يوم</span>
+              <span class="text-xs text-slate-500 mt-1 block">كل عام وأنت بخير!</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 block">إجمالي الأشهر</span>
+              <span id="ageTotalMonths" class="text-lg font-extrabold text-indigo-600 dark:text-indigo-400">341</span>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 block">إجمالي الأسابيع</span>
+              <span id="ageTotalWeeks" class="text-lg font-extrabold text-indigo-600 dark:text-indigo-400">1,486</span>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 block">إجمالي الأيام</span>
+              <span id="ageTotalDays" class="text-lg font-extrabold text-indigo-600 dark:text-indigo-400">10,403</span>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 block">إجمالي الساعات</span>
+              <span id="ageTotalHours" class="text-lg font-extrabold text-indigo-600 dark:text-indigo-400">249,672</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 5: HEALTH, CALORIES & BMI ==================== -->
+      <section id="tab-health" class="tool-section hidden space-y-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex items-center gap-3 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-2xl bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">حاسبة السعرات الحرارية ومؤشر كتلة الجسم (BMI)</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">احسب احتياجك اليومي من السعرات والبروتين والماء والوزن المثالي</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div>
+              <label for="healthGender" class="block text-xs font-bold mb-1.5">الجنس</label>
+              <select id="healthGender" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="male" selected>ذكر</option>
+                <option value="female">أنثى</option>
+              </select>
+            </div>
+            <div>
+              <label for="healthAge" class="block text-xs font-bold mb-1.5">العمر (سنة)</label>
+              <input id="healthAge" type="number" min="10" max="100" value="28" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="healthWeight" class="block text-xs font-bold mb-1.5">الوزن (كجم)</label>
+              <input id="healthWeight" type="number" min="25" max="250" step="0.5" value="78" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="healthHeight" class="block text-xs font-bold mb-1.5">الطول (سم)</label>
+              <input id="healthHeight" type="number" min="100" max="230" value="175" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="healthActivity" class="block text-xs font-bold mb-1.5">مستوى النشاط</label>
+              <select id="healthActivity" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="1.2">خامل (عمل مكتبي بدون رياضة)</option>
+                <option value="1.375">نشاط خفيف (1-3 أيام بالأسبوع)</option>
+                <option value="1.55" selected>نشاط متوسط (3-5 أيام بالأسبوع)</option>
+                <option value="1.725">نشاط عالي (6-7 أيام بالأسبوع)</option>
+              </select>
+            </div>
+            <div>
+              <label for="healthGoal" class="block text-xs font-bold mb-1.5">الهدف الغذائي</label>
+              <select id="healthGoal" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2.5 text-sm font-bold">
+                <option value="maintain" selected>تثبيت الوزن الحالي</option>
+                <option value="lose">إنقاص الوزن (-500 سعرة)</option>
+                <option value="gain">زيادة الوزن والعضلات (+400 سعرة)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-rose-500 to-orange-500 text-white rounded-2xl p-4 shadow-md">
+              <span class="text-xs opacity-90 block">السعرات اليومية المستهدفة</span>
+              <span id="healthTargetCalories" class="text-2xl font-extrabold mt-1 block">2,715 سعرة/يوم</span>
+              <span id="healthBmrSubtext" class="text-xs opacity-90 mt-1 block">الأيض الأساسي (BMR): 1,752 سعرة</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">مؤشر كتلة الجسم (BMI)</span>
+              <span id="healthBmiValue" class="text-xl font-extrabold text-slate-900 dark:text-white mt-1 block">25.5</span>
+              <span id="healthBmiStatus" class="text-xs font-bold text-amber-600 dark:text-amber-400 mt-1 block">وزن زائد قليلاً</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block">احتياج الماء والوزن المثالي</span>
+              <span id="healthWaterNeed" class="text-xl font-extrabold text-sky-600 dark:text-sky-400 mt-1 block">2.7 لتر يومياً</span>
+              <span id="healthIdealWeight" class="text-xs text-slate-500 mt-1 block">الوزن المثالي: 57 - 76 كجم</span>
+            </div>
+          </div>
+
+          <!-- Macros Breakdown -->
+          <div class="grid grid-cols-3 gap-3 text-center">
+            <div class="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900">
+              <span class="text-xs font-bold text-rose-700 dark:text-rose-300 block">البروتين اليومي</span>
+              <span id="macroProtein" class="text-lg font-extrabold text-rose-600 dark:text-rose-400">156 جرام</span>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900">
+              <span class="text-xs font-bold text-amber-700 dark:text-amber-300 block">الكربوهيدرات</span>
+              <span id="macroCarbs" class="text-lg font-extrabold text-amber-600 dark:text-amber-400">315 جرام</span>
+            </div>
+            <div class="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900">
+              <span class="text-xs font-bold text-emerald-700 dark:text-emerald-300 block">الدهون الصحية</span>
+              <span id="macroFats" class="text-lg font-extrabold text-emerald-600 dark:text-emerald-400">78 جرام</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== TAB 6: ADSENSE CENTER & REVENUE SIMULATOR ==================== -->
+      <section id="tab-adsense" class="tool-section hidden space-y-6">
+        <div class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          <div class="flex items-center gap-3 pb-5 mb-6 border-b border-slate-100 dark:border-slate-800">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-slate-900 dark:text-white">مركز الربط مع Google AdSense وحاسبة الأرباح</h2>
+              <p class="text-sm text-slate-500 dark:text-slate-400">احسب أرباحك المتوقعة من الموقع واحصل على كود الربط وملف ads.txt الجاهز</p>
+            </div>
+          </div>
+
+          <!-- Revenue Simulator -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div>
+              <label for="adDailyVisitors" class="block text-xs font-bold mb-1.5">عدد الزوار اليومي المتوقع</label>
+              <input id="adDailyVisitors" type="number" min="100" step="500" value="5000" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="adCtr" class="block text-xs font-bold mb-1.5">نسبة النقر على الإعلان CTR (%)</label>
+              <input id="adCtr" type="number" min="0.1" max="20" step="0.1" value="2.5" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+            <div>
+              <label for="adCpc" class="block text-xs font-bold mb-1.5">سعر النقرة المتوقع CPC ($)</label>
+              <input id="adCpc" type="number" min="0.02" max="5" step="0.05" value="0.25" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-4 py-2.5 text-sm font-bold" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-2xl p-4 shadow-md">
+              <span class="text-xs opacity-90 block">الربح الشهري المتوقع</span>
+              <span id="adMonthlyRev" class="text-2xl font-extrabold mt-1 block">$937.50 / شهر</span>
+              <span class="text-xs opacity-85 mt-1 block">حاسبات الذهب والقروض تتميز بـ CPC مرتفع</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 font-semibold block">الربح اليومي المتوقع</span>
+              <span id="adDailyRev" class="text-xl font-extrabold text-slate-900 dark:text-white mt-1 block">$31.25 / يوم</span>
+              <span id="adDailyClicks" class="text-xs text-slate-500 mt-1 block">حوالي 125 نقرة يومياً</span>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-4 border border-slate-200 dark:border-slate-700">
+              <span class="text-xs text-slate-500 font-semibold block">الربح السنوي المتوقع</span>
+              <span id="adYearlyRev" class="text-xl font-extrabold text-emerald-600 dark:text-emerald-400 mt-1 block">$11,250.00 / سنة</span>
+              <span class="text-xs text-slate-500 mt-1 block">قابل للزيادة مع نمو SEO</span>
+            </div>
+          </div>
+
+          <!-- AdSense Publisher ID Generator -->
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 space-y-4">
+            <h3 class="text-sm font-extrabold text-slate-900 dark:text-white">توليد كود الربط وملف ads.txt الخاص بحسابك</h3>
+            <div class="flex flex-wrap items-end gap-3">
+              <div class="flex-1 min-w-[220px]">
+                <label for="pubIdInput" class="block text-xs font-bold mb-1 text-slate-600 dark:text-slate-300">معرف الناشر في AdSense (Publisher ID)</label>
+                <input id="pubIdInput" type="text" value="pub-1234567890123456" class="w-full font-mono bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm" />
+              </div>
+              <button id="copyHeadScriptBtn" type="button" class="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-xl text-xs font-bold transition">
+                نسخ كود التفعيل &lt;head&gt;
+              </button>
+              <button id="copyAdsTxtBtn" type="button" class="bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-xl text-xs font-bold transition">
+                نسخ سطر ملف ads.txt
+              </button>
+            </div>
+            <pre id="adsenseSnippetPreview" dir="ltr" class="text-xs font-mono bg-slate-900 text-emerald-300 p-3 rounded-xl overflow-x-auto"></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- In-Content AdSense Slot -->
+      <div class="ad-unit-container">
+        <div class="ad-slot-pattern bg-white dark:bg-slate-900 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <div>
+            <span class="bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs font-bold px-2.5 py-0.5 rounded border border-amber-300 dark:border-amber-700">إعلان وسط المحتوى (In-Article Ad)</span>
+            <p class="text-xs font-bold text-slate-700 dark:text-slate-200 mt-1.5">مساحة إعلانية مدمجة أسفل الأداة مباشرة لزيادة التفاعل بعد ظهور النتيجة للزائر</p>
+          </div>
+          <button type="button" data-copy-ad="in-article" class="copy-ad-code-btn shrink-0 text-xs bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 text-indigo-600 dark:text-indigo-400 font-semibold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-700 transition">
+            نسخ كود الإعلان
+          </button>
+        </div>
+      </div>
+
+      <!-- SEO Rich Articles & FAQ (Required by AdSense to avoid "Thin Content" rejection) -->
+      <article class="bg-white dark:bg-slate-900 rounded-3xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-800 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-lg font-extrabold text-slate-900 dark:text-white">دليل الاستخدام والمحتوى المعرفي (متوافق مع شروط محتوى AdSense)</h2>
+          <span class="text-xs bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 px-2.5 py-1 rounded-lg font-bold">مُحسّن لمحركات البحث SEO</span>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+          تُعد الحاسبات المالية والصحية من أكثر الأدوات التي يبحث عنها المستخدمون يومياً في العالم العربي. وجود هذا الشرح التفصيلي أسفل الحاسبات يضمن قبول الموقع فوراً في <strong>Google AdSense</strong> لأنه يمنع رفض الموقع بسبب "المحتوى غير الكافي" (Low Value Content) ويزيد من مدة بقاء الزائر في الصفحة.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">كيف تحسب مصنعية الذهب وزكاته بدقة؟</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              يتم حساب سعر الذهب بضرب وزن القطعة بالجرام في سعر العيار اليوم، ثم إضافة قيمة المصنعية والدمغة لكل جرام. أما زكاة الذهب فتجب إذا بلغ الذهب الصافي 85 جراماً من عيار 21 وحال عليه الحول الهجري بنسبة 2.5%.
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-100 dark:border-slate-800">
+            <h3 class="text-sm font-bold text-slate-900 dark:text-white mb-1">الفرق بين الفائدة المتناقصة والفائدة الثابتة</h3>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+              في الفائدة المتناقصة تُحتسب النسبة السنوية على الرصيد المتبقي من القرض بعد كل قسط شهري، بينما في الفائدة الثابتة تُحتسب النسبة على كامل أصل مبلغ القرض طوال سنوات السداد.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Sidebar (4 cols on lg) -->
+    <aside class="lg:col-span-4 space-y-6">
+      <!-- Sidebar AdSense Slot (300x250 Rectangle) -->
+      <div class="ad-unit-container">
+        <div class="ad-slot-pattern bg-white dark:bg-slate-900 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-3xl p-5 text-center space-y-3">
+          <span class="bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs font-bold px-2.5 py-1 rounded border border-amber-300 dark:border-amber-700 inline-block">إعلان جانبي (300×250)</span>
+          <div class="py-6">
+            <p class="text-sm font-extrabold text-slate-700 dark:text-slate-200">مساحة إعلانية جانبية ثابتة</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Medium Rectangle 300×250</p>
+          </div>
+          <button type="button" data-copy-ad="sidebar" class="copy-ad-code-btn w-full text-xs bg-slate-100 dark:bg-slate-800 hover:bg-indigo-50 text-indigo-600 dark:text-indigo-400 font-semibold py-2 rounded-xl border border-slate-200 dark:border-slate-700 transition">
+            نسخ كود إعلان القائمة الجانبية
+          </button>
+        </div>
+      </div>
+
+      <!-- Most Popular Tools Widget -->
+      <div class="bg-white dark:bg-slate-900 rounded-3xl p-5 shadow-sm border border-slate-200/80 dark:border-slate-800">
+        <h3 class="text-base font-extrabold text-slate-900 dark:text-white mb-3">الأدوات الأكثر بحثاً في جوجل</h3>
+        <div class="space-y-2">
+          <button type="button" data-quick-tab="gold" class="quick-nav-btn w-full text-right p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 transition flex items-center justify-between">
+            <span class="text-sm font-bold">سعر الذهب اليوم بالمصنعية</span>
+            <span class="text-xs bg-amber-100 dark:bg-amber-900/60 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-md font-bold">رائج جداً</span>
+          </button>
+          <button type="button" data-quick-tab="loan" class="quick-nav-btn w-full text-right p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 transition flex items-center justify-between">
+            <span class="text-sm font-bold">حاسبة القسط الشهري للقروض</span>
+            <span class="text-xs bg-emerald-100 dark:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded-md font-bold">أعلى ربح CPC</span>
+          </button>
+          <button type="button" data-quick-tab="converter" class="quick-nav-btn w-full text-right p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 transition flex items-center justify-between">
+            <span class="text-sm font-bold">تحويل الصور إلى WebP وضغطها</span>
+            <span class="text-xs bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 px-2 py-0.5 rounded-md font-bold">سريع</span>
+          </button>
+          <button type="button" data-quick-tab="health" class="quick-nav-btn w-full text-right p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950/50 transition flex items-center justify-between">
+            <span class="text-sm font-bold">حاسبة السعرات الحرارية والـ BMI</span>
+            <span class="text-xs bg-rose-100 dark:bg-rose-900/60 text-rose-700 dark:text-rose-300 px-2 py-0.5 rounded-md font-bold">صحة</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- AdSense Readiness Checklist Card -->
+      <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-5 shadow-md space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-extrabold">قائمة فحص شروط Google AdSense</h3>
+          <span class="text-xs bg-emerald-500 text-slate-950 font-extrabold px-2 py-0.5 rounded-md">مكتمل 100%</span>
+        </div>
+        <ul class="space-y-2 text-xs text-slate-200">
+          <li class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span>أدوات تفاعلية حقيقية تقدم قيمة فعلية للزائر</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span>صفحة سياسة الخصوصية متوافقة مع ملفات تعريف الارتباط DART</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span>صفحات شروط الاستخدام ومن نحن واتصل بنا</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span>
+            <span>تصميم متجاوب وسريع للموبايل والكمبيوتر</span>
+          </li>
+        </ul>
+        <div class="pt-2 flex flex-wrap gap-2">
+          <button type="button" data-modal="privacy" class="open-legal-btn text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg font-semibold transition">معاينة سياسة الخصوصية</button>
+          <button type="button" data-modal="contact" class="open-legal-btn text-xs bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-lg font-semibold transition">نموذج اتصل بنا</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Legal & AdSense Mandatory Pages Modal -->
+  <div id="legalModal" class="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+        <h3 id="legalModalTitle" class="text-lg font-extrabold text-slate-900 dark:text-white">سياسة الخصوصية</h3>
+        <button id="closeLegalModalBtn" type="button" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200">✕</button>
+      </div>
+      <div id="legalModalContent" class="p-6 overflow-y-auto custom-scrollbar text-sm text-slate-600 dark:text-slate-300 space-y-4 leading-relaxed"></div>
+    </div>
+  </div>
+
+  <!-- Footer (With Mandatory AdSense Links) -->
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-10">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 dark:text-slate-400">
+      <div>
+        <span class="font-bold text-slate-800 dark:text-slate-200">أدواتي الذكية</span> — جميع الحقوق محفوظة © 2026
+      </div>
+      <div class="flex flex-wrap items-center gap-4 font-semibold">
+        <button type="button" data-modal="privacy" class="open-legal-btn hover:text-indigo-600 transition">سياسة الخصوصية (Privacy Policy)</button>
+        <button type="button" data-modal="terms" class="open-legal-btn hover:text-indigo-600 transition">شروط الاستخدام (Terms)</button>
+        <button type="button" data-modal="about" class="open-legal-btn hover:text-indigo-600 transition">من نحن (About Us)</button>
+        <button type="button" data-modal="contact" class="open-legal-btn hover:text-indigo-600 transition">اتصل بنا (Contact Us)</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Toast helper
+      function showToast(msg) {
+        const container = document.getElementById('toastContainer');
+        const text = document.getElementById('toastMessage');
+        text.textContent = msg;
+        container.classList.remove('hidden');
+        clearTimeout(window._toastTimer);
+        window._toastTimer = setTimeout(function () {
+          container.classList.add('hidden');
+        }, 3000);
+      }
+
+      // Copy helper with fallback
+      function copyText(str, successMsg) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(str).then(function () {
+            showToast(successMsg);
+          }).catch(function () {
+            fallbackCopy(str, successMsg);
+          });
+        } else {
+          fallbackCopy(str, successMsg);
+        }
+      }
+
+      function fallbackCopy(str, successMsg) {
+        const ta = document.createElement('textarea');
+        ta.value = str;
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast(successMsg);
+        } catch (e) {
+          showToast('تم تجهيز النص للنسخ');
+        }
+        document.body.removeChild(ta);
+      }
+
+      // Format numbers nicely
+      function fmtNum(n, decimals) {
+        const d = typeof decimals === 'number' ? decimals : 2;
+        return Number(n || 0).toLocaleString('en-US', {
+          minimumFractionDigits: d,
+          maximumFractionDigits: d
+        });
+      }
+
+      // ==================== NAVIGATION TABS ====================
+      const navBtns = document.querySelectorAll('.nav-tab-btn');
+      const sections = document.querySelectorAll('.tool-section');
+
+      function switchTab(tabId) {
+        sections.forEach(function (sec) {
+          if (sec.id === 'tab-' + tabId) {
+            sec.classList.remove('hidden');
+          } else {
+            sec.classList.add('hidden');
+          }
+        });
+        navBtns.forEach(function (btn) {
+          const isCurrent = btn.getAttribute('data-tab') === tabId;
+          if (isCurrent) {
+            btn.className = 'nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap bg-indigo-600 text-white shadow-sm';
+          } else {
+            btn.className = 'nav-tab-btn px-3.5 py-2 rounded-xl text-sm font-bold transition whitespace-nowrap text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800';
+          }
+        });
+      }
+
+      navBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          switchTab(btn.getAttribute('data-tab'));
+        });
+      });
+
+      document.querySelectorAll('.quick-nav-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          switchTab(btn.getAttribute('data-quick-tab'));
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+
+      document.getElementById('brandHomeBtn').addEventListener('click', function () {
+        switchTab('gold');
+      });
+
+      document.getElementById('openAdsenseGuideBtn').addEventListener('click', function () {
+        switchTab('adsense');
+      });
+
+      // ==================== DARK MODE ====================
+      const darkModeBtn = document.getElementById('darkModeBtn');
+      const sunIcon = document.getElementById('sunIcon');
+      const moonIcon = document.getElementById('moonIcon');
+
+      function setDarkMode(isDark) {
+        if (isDark) {
+          document.documentElement.classList.add('dark');
+          sunIcon.classList.remove('hidden');
+          moonIcon.classList.add('hidden');
+        } else {
+          document.documentElement.classList.remove('dark');
+          sunIcon.classList.add('hidden');
+          moonIcon.classList.remove('hidden');
+        }
+        try {
+          localStorage.setItem('smart_tools_dark', isDark ? '1' : '0');
+        } catch (e) {}
+      }
+
+      try {
+        if (localStorage.getItem('smart_tools_dark') === '1') {
+          setDarkMode(true);
+        }
+      } catch (e) {}
+
+      darkModeBtn.addEventListener('click', function () {
+        const isDark = !document.documentElement.classList.contains('dark');
+        setDarkMode(isDark);
+      });
+
+      // ==================== ADSENSE PREVIEW TOGGLE ====================
+      let showAds = true;
+      const toggleAdsBtn = document.getElementById('toggleAdsBtn');
+      const toggleAdsText = document.getElementById('toggleAdsText');
+      const adsStatusDot = document.getElementById('adsStatusDot');
+
+      toggleAdsBtn.addEventListener('click', function () {
+        showAds = !showAds;
+        document.querySelectorAll('.ad-unit-container').forEach(function (el) {
+          if (showAds) {
+            el.classList.remove('hidden');
+          } else {
+            el.classList.add('hidden');
+          }
+        });
+        toggleAdsText.textContent = showAds ? 'إخفاء معاينة الإعلانات' : 'إظهار معاينة الإعلانات';
+        adsStatusDot.className = showAds ? 'w-2 h-2 rounded-full bg-emerald-400' : 'w-2 h-2 rounded-full bg-rose-400';
+      });
+
+      // ==================== 1. GOLD & CURRENCY CALCULATOR ====================
+      const goldCurrencyDefaults = {
+        EGP: { price21: 3750, making: 150 },
+        SAR: { price21: 295, making: 25 },
+        AED: { price21: 290, making: 25 },
+        USD: { price21: 78, making: 6 }
+      };
+
+      const goldCurrencySelect = document.getElementById('goldCurrencySelect');
+      const goldKarat = document.getElementById('goldKarat');
+      const goldGramPrice21 = document.getElementById('goldGramPrice21');
+      const goldWeight = document.getElementById('goldWeight');
+      const goldMakingCharge = document.getElementById('goldMakingCharge');
+
+      function updateGoldCalculator() {
+        const curr = goldCurrencySelect.value;
+        const selectedKarat = parseFloat(goldKarat.value) || 21;
+        const basePrice21 = Math.max(0, parseFloat(goldGramPrice21.value) || 0);
+        const weight = Math.max(0, parseFloat(goldWeight.value) || 0);
+        const makingPerGram = Math.max(0, parseFloat(goldMakingCharge.value) || 0);
+
+        const price24 = basePrice21 * (24 / 21);
+        const currentKaratPrice = price24 * (selectedKarat / 24);
+        const pureValue = currentKaratPrice * weight;
+        const totalMaking = makingPerGram * weight;
+        const totalWithMaking = pureValue + totalMaking;
+
+        document.getElementById('goldTotalWithMaking').textContent = fmtNum(totalWithMaking, 0) + ' ' + curr;
+        document.getElementById('goldSelectedUnitPrice').textContent = 'سعر جرام عيار ' + selectedKarat + ': ' + fmtNum(currentKaratPrice, 2) + ' ' + curr;
+        document.getElementById('goldPureValue').textContent = fmtNum(pureValue, 0) + ' ' + curr;
+        document.getElementById('goldTotalMakingValue').textContent = 'إجمالي المصنعية: ' + fmtNum(totalMaking, 0) + ' ' + curr;
+
+        // Zakat check (equivalent in 21k grams)
+        const equiv21Grams = weight * (selectedKarat / 21);
+        const zakatEl = document.getElementById('goldZakatValue');
+        const zakatNote = document.getElementById('goldZakatNote');
+        if (equiv21Grams >= 85) {
+          const zakatAmount = pureValue * 0.025;
+          zakatEl.textContent = fmtNum(zakatAmount, 2) + ' ' + curr;
+          zakatNote.textContent = 'بلغ النصاب (' + fmtNum(equiv21Grams, 1) + ' جم مكافئ عيار 21)';
+        } else {
+          zakatEl.textContent = 'أقل من النصاب الشرعي';
+          zakatNote.textContent = 'متبقي للنصاب: ' + fmtNum(85 - equiv21Grams, 1) + ' جم عيار 21';
+        }
+
+        // Populate karats table
+        const rows = [
+          { name: 'ذهب عيار 24', purity: '99.9%', factor: 24 / 24 },
+          { name: 'ذهب عيار 22', purity: '91.6%', factor: 22 / 24 },
+          { name: 'ذهب عيار 21', purity: '87.5%', factor: 21 / 24 },
+          { name: 'ذهب عيار 18', purity: '75.0%', factor: 18 / 24 },
+          { name: 'ذهب عيار 14', purity: '58.3%', factor: 14 / 24 },
+          { name: 'الجنيه الذهب (8 جم عيار 21)', purity: '87.5%', unitWeight: 8, factor: 21 / 24 }
+        ];
+
+        const tbody = document.getElementById('goldKaratsTableBody');
+        tbody.innerHTML = rows.map(function (r) {
+          const unitPrice = r.unitWeight ? (price24 * r.factor * r.unitWeight) : (price24 * r.factor);
+          const totalForWeight = (price24 * r.factor * weight) + totalMaking;
+          return '<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">' +
+            '<td class="py-2.5 px-3 font-bold text-slate-800 dark:text-slate-200">' + r.name + '</td>' +
+            '<td class="py-2.5 px-3 text-slate-500">' + r.purity + '</td>' +
+            '<td class="py-2.5 px-3 font-semibold text-amber-600 dark:text-amber-400">' + fmtNum(unitPrice, 2) + ' ' + curr + '</td>' +
+            '<td class="py-2.5 px-3 font-bold">' + fmtNum(totalForWeight, 0) + ' ' + curr + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+
+      goldCurrencySelect.addEventListener('change', function () {
+        const def = goldCurrencyDefaults[goldCurrencySelect.value];
+        if (def) {
+          goldGramPrice21.value = def.price21;
+          goldMakingCharge.value = def.making;
+        }
+        updateGoldCalculator();
+      });
+
+      [goldKarat, goldGramPrice21, goldWeight, goldMakingCharge].forEach(function (el) {
+        el.addEventListener('input', updateGoldCalculator);
+        el.addEventListener('change', updateGoldCalculator);
+      });
+
+      document.querySelectorAll('.gold-preset-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          goldWeight.value = btn.getAttribute('data-gold-preset');
+          goldKarat.value = btn.getAttribute('data-karat');
+          updateGoldCalculator();
+        });
+      });
+
+      // Currency Converter
+      const usdRates = {
+        USD: 1,
+        EGP: 49.20,
+        SAR: 3.75,
+        AED: 3.67,
+        EUR: 0.92,
+        KWD: 0.307,
+        GBP: 0.79
+      };
+
+      const currAmount = document.getElementById('currAmount');
+      const currFrom = document.getElementById('currFrom');
+      const currTo = document.getElementById('currTo');
+
+      function updateCurrencyConverter() {
+        const amt = Math.max(0, parseFloat(currAmount.value) || 0);
+        const from = currFrom.value;
+        const to = currTo.value;
+        const inUsd = amt / (usdRates[from] || 1);
+        const converted = inUsd * (usdRates[to] || 1);
+        const singleRate = (usdRates[to] || 1) / (usdRates[from] || 1);
+
+        document.getElementById('currResultText').textContent = fmtNum(converted, 2) + ' ' + to;
+        document.getElementById('currRateSubtext').textContent = '1 ' + from + ' = ' + fmtNum(singleRate, 4) + ' ' + to;
+      }
+
+      [currAmount, currFrom, currTo].forEach(function (el) {
+        el.addEventListener('input', updateCurrencyConverter);
+        el.addEventListener('change', updateCurrencyConverter);
+      });
+
+      document.getElementById('swapCurrBtn').addEventListener('click', function () {
+        const temp = currFrom.value;
+        currFrom.value = currTo.value;
+        currTo.value = temp;
+        updateCurrencyConverter();
+      });
+
+      // ==================== 2. LOAN CALCULATOR ====================
+      const loanAmount = document.getElementById('loanAmount');
+      const loanRate = document.getElementById('loanRate');
+      const loanMonths = document.getElementById('loanMonths');
+      const loanType = document.getElementById('loanType');
+
+      function updateLoanCalculator() {
+        const P = Math.max(100, parseFloat(loanAmount.value) || 0);
+        const annualRate = Math.max(0, parseFloat(loanRate.value) || 0);
+        const n = Math.max(1, Math.min(360, parseInt(loanMonths.value, 10) || 12));
+        const mode = loanType.value;
+
+        let monthlyPayment = 0;
+        let totalPayment = 0;
+        let totalInterest = 0;
+        const scheduleRows = [];
+
+        if (mode === 'diminishing') {
+          const r = (annualRate / 100) / 12;
+          if (r === 0) {
+            monthlyPayment = P / n;
+          } else {
+            monthlyPayment = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+          }
+          totalPayment = monthlyPayment * n;
+          totalInterest = totalPayment - P;
+
+          let balance = P;
+          for (let m = 1; m <= n; m++) {
+            const interestPart = balance * r;
+            const principalPart = monthlyPayment - interestPart;
+            balance = Math.max(0, balance - principalPart);
+            scheduleRows.push({
+              month: m,
+              payment: monthlyPayment,
+              principal: principalPart,
+              interest: interestPart,
+              balance: balance
+            });
+          }
+        } else {
+          // Flat rate
+          totalInterest = P * (annualRate / 100) * (n / 12);
+          totalPayment = P + totalInterest;
+          monthlyPayment = totalPayment / n;
+          const principalPart = P / n;
+          const interestPart = totalInterest / n;
+          let balance = P;
+          for (let m = 1; m <= n; m++) {
+            balance = Math.max(0, balance - principalPart);
+            scheduleRows.push({
+              month: m,
+              payment: monthlyPayment,
+              principal: principalPart,
+              interest: interestPart,
+              balance: balance
+            });
+          }
+        }
+
+        const principalPct = totalPayment > 0 ? Math.round((P / totalPayment) * 100) : 100;
+        const interestPct = 100 - principalPct;
+
+        document.getElementById('loanMonthlyPayment').textContent = fmtNum(monthlyPayment, 2);
+        document.getElementById('loanTotalInterest').textContent = fmtNum(totalInterest, 2);
+        document.getElementById('loanTotalPayment').textContent = fmtNum(totalPayment, 2);
+        document.getElementById('loanInterestRatio').textContent = 'نسبة الفائدة للإجمالي: ' + interestPct + '%';
+        document.getElementById('loanPrincipalPct').textContent = principalPct + '%';
+        document.getElementById('loanInterestPct').textContent = interestPct + '%';
+        document.getElementById('loanPrincipalBar').style.width = principalPct + '%';
+
+        const tbody = document.getElementById('loanScheduleBody');
+        tbody.innerHTML = scheduleRows.slice(0, 120).map(function (row) {
+          return '<tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40">' +
+            '<td class="py-2 px-3 font-bold">' + row.month + '</td>' +
+            '<td class="py-2 px-3 font-semibold">' + fmtNum(row.payment, 2) + '</td>' +
+            '<td class="py-2 px-3 text-indigo-600 dark:text-indigo-400">' + fmtNum(row.principal, 2) + '</td>' +
+            '<td class="py-2 px-3 text-rose-500">' + fmtNum(row.interest, 2) + '</td>' +
+            '<td class="py-2 px-3 font-semibold">' + fmtNum(row.balance, 2) + '</td>' +
+          '</tr>';
+        }).join('');
+      }
+
+      [loanAmount, loanRate, loanMonths, loanType].forEach(function (el) {
+        el.addEventListener('input', updateLoanCalculator);
+        el.addEventListener('change', updateLoanCalculator);
+      });
+
+      // ==================== 3. IMAGE & UNIT CONVERTER ====================
+      const canvas = document.getElementById('converterCanvas');
+      const ctx = canvas.getContext('2d');
+      const imgUploadInput = document.getElementById('imgUploadInput');
+      const imgTargetFormat = document.getElementById('imgTargetFormat');
+      const imgQualityRange = document.getElementById('imgQualityRange');
+      let currentImageDataUrl = '';
+
+      function drawSampleArtwork() {
+        const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+        grad.addColorStop(0, '#4f46e5');
+        grad.addColorStop(1, '#06b6d4');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 20px Cairo, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('أدواتي الذكية - نموذج صورة', canvas.width / 2, canvas.height / 2 + 6);
+        updateConvertedImagePreview();
+      }
+
+      function updateConvertedImagePreview() {
+        const mime = imgTargetFormat.value;
+        const quality = (parseInt(imgQualityRange.value, 10) || 80) / 100;
+        document.getElementById('imgQualityLabel').textContent = Math.round(quality * 100) + '%';
+        currentImageDataUrl = canvas.toDataURL(mime, quality);
+        const approxBytes = Math.round((currentImageDataUrl.length * 3) / 4);
+        const ext = mime.split('/')[1].toUpperCase();
+        document.getElementById('convertedFileInfo').textContent = 'صيغة الإخراج: ' + ext + ' (جودة ' + Math.round(quality * 100) + '%)';
+        document.getElementById('convertedSizeInfo').textContent = 'الحجم الفعلي بعد الضغط: ' + fmtNum(approxBytes / 1024, 1) + ' KB';
+      }
+
+      imgUploadInput.addEventListener('change', function (e) {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function (ev) {
+          const img = new Image();
+          img.onload = function () {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            ctx.drawImage(img, 0, 0);
+            updateConvertedImagePreview();
+            showToast('تم رفع الصورة وضغطها بنجاح');
+          };
+          img.src = ev.target.result;
+        };
+        reader.readAsDataURL(file);
+      });
+
+      [imgTargetFormat, imgQualityRange].forEach(function (el) {
+        el.addEventListener('input', updateConvertedImagePreview);
+        el.addEventListener('change', updateConvertedImagePreview);
+      });
+
+      document.getElementById('downloadConvertedImgBtn').addEventListener('click', function () {
+        if (!currentImageDataUrl) updateConvertedImagePreview();
+        const ext = imgTargetFormat.value.split('/')[1];
+        const a = document.createElement('a');
+        a.href = currentImageDataUrl;
+        a.download = 'converted-image.' + ext;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        showToast('بدأ تنزيل الصورة المحولة');
+      });
+
+      // Unit Converter
+      const unitDefs = {
+        length: {
+          units: {
+            m: { name: 'متر (m)', factor: 1 },
+            km: { name: 'كيلومتر (km)', factor: 1000 },
+            cm: { name: 'سنتيمتر (cm)', factor: 0.01 },
+            mile: { name: 'ميل (Mile)', factor: 1609.344 },
+            ft: { name: 'قدم (Foot)', factor: 0.3048 }
+          }
+        },
+        weight: {
+          units: {
+            kg: { name: 'كيلوجرام (kg)', factor: 1 },
+            g: { name: 'جرام (g)', factor: 0.001 },
+            lb: { name: 'رطل (Pound)', factor: 0.453592 },
+            oz: { name: 'أونصة (Ounce)', factor: 0.0283495 }
+          }
+        },
+        data: {
+          units: {
+            MB: { name: 'ميجابايت (MB)', factor: 1 },
+            GB: { name: 'جيجابايت (GB)', factor: 1024 },
+            TB: { name: 'تيرابايت (TB)', factor: 1048576 },
+            KB: { name: 'كيلوبايت (KB)', factor: 1 / 1024 }
+          }
+        }
+      };
+
+      const unitCategory = document.getElementById('unitCategory');
+      const unitValue = document.getElementById('unitValue');
+      const unitFrom = document.getElementById('unitFrom');
+      const unitTo = document.getElementById('unitTo');
+
+      function populateUnitSelects() {
+        const cat = unitCategory.value;
+        const map = unitDefs[cat].units;
+        const keys = Object.keys(map);
+        unitFrom.innerHTML = keys.map(function (k) {
+          return '<option value="' + k + '">' + map[k].name + '</option>';
+        }).join('');
+        unitTo.innerHTML = keys.map(function (k, idx) {
+          return '<option value="' + k + '"' + (idx === 1 ? ' selected' : '') + '>' + map[k].name + '</option>';
+        }).join('');
+        calculateUnits();
+      }
+
+      function calculateUnits() {
+        const cat = unitCategory.value;
+        const map = unitDefs[cat].units;
+        const val = parseFloat(unitValue.value) || 0;
+        const fromUnit = map[unitFrom.value];
+        const toUnit = map[unitTo.value];
+        if (!fromUnit || !toUnit) return;
+        const res = (val * fromUnit.factor) / toUnit.factor;
+        document.getElementById('unitResultOutput').textContent = fmtNum(res, 4) + ' ' + toUnit.name;
+      }
+
+      unitCategory.addEventListener('change', populateUnitSelects);
+      [unitValue, unitFrom, unitTo].forEach(function (el) {
+        el.addEventListener('input', calculateUnits);
+        el.addEventListener('change', calculateUnits);
+      });
+
+      // ==================== 4. AGE CALCULATOR ====================
+      const birthDateInput = document.getElementById('birthDateInput');
+      const arabicDays = ['الأحد', 'الإثنين', 'الثلاثاء', 'الأربعاء', 'الخميس', 'الجمعة', 'السبت'];
+
+      function updateAgeCalculator() {
+        const val = birthDateInput.value;
+        if (!val) return;
+        const birth = new Date(val);
+        const now = new Date();
+        if (isNaN(birth.getTime()) || birth > now) return;
+
+        let years = now.getFullYear() - birth.getFullYear();
+        let months = now.getMonth() - birth.getMonth();
+        let days = now.getDate() - birth.getDate();
+
+        if (days < 0) {
+          months--;
+          const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+          days += prevMonth.getDate();
+        }
+        if (months < 0) {
+          years--;
+          months += 12;
+        }
+
+        const diffMs = now.getTime() - birth.getTime();
+        const totalDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+        const totalWeeks = Math.floor(totalDays / 7);
+        const totalMonths = years * 12 + months;
+        const totalHours = totalDays * 24;
+
+        // Next birthday
+        let nextBday = new Date(now.getFullYear(), birth.getMonth(), birth.getDate());
+        if (nextBday < now) {
+          nextBday = new Date(now.getFullYear() + 1, birth.getMonth(), birth.getDate());
+        }
+        const daysToNext = Math.ceil((nextBday.getTime() - now.getTime()) / (1000 * 60 * 60 * 24));
+
+        // Hijri approx (354.367 days per Hijri year)
+        const hijriTotalYears = totalDays / 354.367;
+        const hijriYears = Math.floor(hijriTotalYears);
+        const hijriMonths = Math.floor((hijriTotalYears - hijriYears) * 12);
+
+        document.getElementById('ageYearsMonthsDays').textContent = years + ' سنة، ' + months + ' شهر، ' + days + ' يوم';
+        document.getElementById('ageBornDayName').textContent = 'ولدت في يوم: ' + arabicDays[birth.getDay()];
+        document.getElementById('ageHijriEstimate').textContent = hijriYears + ' سنة و ' + hijriMonths + ' شهر هجري';
+        document.getElementById('ageNextBirthday').textContent = daysToNext + ' يوم';
+        document.getElementById('ageTotalMonths').textContent = fmtNum(totalMonths, 0);
+        document.getElementById('ageTotalWeeks').textContent = fmtNum(totalWeeks, 0);
+        document.getElementById('ageTotalDays').textContent = fmtNum(totalDays, 0);
+        document.getElementById('ageTotalHours').textContent = fmtNum(totalHours, 0);
+      }
+
+      birthDateInput.addEventListener('change', updateAgeCalculator);
+      document.getElementById('calcAgeBtn').addEventListener('click', function () {
+        updateAgeCalculator();
+        showToast('تم تحديث حساب العمر');
+      });
+
+      // ==================== 5. HEALTH & CALORIES CALCULATOR ====================
+      const healthGender = document.getElementById('healthGender');
+      const healthAge = document.getElementById('healthAge');
+      const healthWeight = document.getElementById('healthWeight');
+      const healthHeight = document.getElementById('healthHeight');
+      const healthActivity = document.getElementById('healthActivity');
+      const healthGoal = document.getElementById('healthGoal');
+
+      function updateHealthCalculator() {
+        const gender = healthGender.value;
+        const age = Math.max(10, parseFloat(healthAge.value) || 25);
+        const weight = Math.max(20, parseFloat(healthWeight.value) || 70);
+        const height = Math.max(100, parseFloat(healthHeight.value) || 170);
+        const activity = parseFloat(healthActivity.value) || 1.55;
+        const goal = healthGoal.value;
+
+        // Mifflin-St Jeor Equation
+        let bmr = (10 * weight) + (6.25 * height) - (5 * age);
+        bmr += (gender === 'male') ? 5 : -161;
+
+        let targetCalories = bmr * activity;
+        if (goal === 'lose') targetCalories -= 500;
+        if (goal === 'gain') targetCalories += 400;
+
+        // BMI
+        const hMeters = height / 100;
+        const bmi = weight / (hMeters * hMeters);
+        let bmiStatus = 'وزن طبيعي وصحي';
+        if (bmi < 18.5) bmiStatus = 'نحافة (أقل من الطبيعي)';
+        else if (bmi >= 25 && bmi < 30) bmiStatus = 'وزن زائد قليلاً';
+        else if (bmi >= 30) bmiStatus = 'سمنة (يُنصح بخطة إنقاص وزن)';
+
+        const minIdeal = Math.round(18.5 * hMeters * hMeters);
+        const maxIdeal = Math.round(24.9 * hMeters * hMeters);
+        const waterLiters = (weight * 0.035).toFixed(1);
+
+        // Macros
+        const proteinG = Math.round(weight * 1.8);
+        const fatsG = Math.round((targetCalories * 0.25) / 9);
+        const carbsG = Math.max(50, Math.round((targetCalories - (proteinG * 4) - (fatsG * 9)) / 4));
+
+        document.getElementById('healthTargetCalories').textContent = fmtNum(targetCalories, 0) + ' سعرة/يوم';
+        document.getElementById('healthBmrSubtext').textContent = 'الأيض الأساسي (BMR): ' + fmtNum(bmr, 0) + ' سعرة';
+        document.getElementById('healthBmiValue').textContent = fmtNum(bmi, 1);
+        document.getElementById('healthBmiStatus').textContent = bmiStatus;
+        document.getElementById('healthWaterNeed').textContent = waterLiters + ' لتر يومياً';
+        document.getElementById('healthIdealWeight').textContent = 'الوزن المثالي لطولك: ' + minIdeal + ' - ' + maxIdeal + ' كجم';
+        document.getElementById('macroProtein').textContent = proteinG + ' جرام';
+        document.getElementById('macroCarbs').textContent = carbsG + ' جرام';
+        document.getElementById('macroFats').textContent = fatsG + ' جرام';
+      }
+
+      [healthGender, healthAge, healthWeight, healthHeight, healthActivity, healthGoal].forEach(function (el) {
+        el.addEventListener('input', updateHealthCalculator);
+        el.addEventListener('change', updateHealthCalculator);
+      });
+
+      // ==================== 6. ADSENSE CENTER & SIMULATOR ====================
+      const adDailyVisitors = document.getElementById('adDailyVisitors');
+      const adCtr = document.getElementById('adCtr');
+      const adCpc = document.getElementById('adCpc');
+      const pubIdInput = document.getElementById('pubIdInput');
+
+      function updateAdsenseSimulator() {
+        const visitors = Math.max(0, parseFloat(adDailyVisitors.value) || 0);
+        const ctr = Math.max(0, parseFloat(adCtr.value) || 0) / 100;
+        const cpc = Math.max(0, parseFloat(adCpc.value) || 0);
+
+        const dailyClicks = visitors * ctr;
+        const dailyRev = dailyClicks * cpc;
+        const monthlyRev = dailyRev * 30;
+        const yearlyRev = dailyRev * 365;
+
+        document.getElementById('adDailyRev').textContent = '$' + fmtNum(dailyRev, 2) + ' / يوم';
+        document.getElementById('adDailyClicks').textContent = 'حوالي ' + fmtNum(dailyClicks, 0) + ' نقرة يومياً';
+        document.getElementById('adMonthlyRev').textContent = '$' + fmtNum(monthlyRev, 2) + ' / شهر';
+        document.getElementById('adYearlyRev').textContent = '$' + fmtNum(yearlyRev, 2) + ' / سنة';
+
+        const pubId = (pubIdInput.value || 'pub-1234567890123456').trim();
+        const clientCode = pubId.startsWith('ca-') ? pubId : 'ca-' + pubId;
+        document.getElementById('adsenseSnippetPreview').textContent =
+          '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + clientCode + '" crossorigin="anonymous"><\/script>\n' +
+          '<!-- سطر ملف ads.txt في المجلد الرئيسي للموقع -->\n' +
+          'google.com, ' + pubId.replace('ca-', '') + ', DIRECT, f08c47fec0942fa0';
+      }
+
+      [adDailyVisitors, adCtr, adCpc, pubIdInput].forEach(function (el) {
+        el.addEventListener('input', updateAdsenseSimulator);
+      });
+
+      document.getElementById('copyHeadScriptBtn').addEventListener('click', function () {
+        const pubId = (pubIdInput.value || 'pub-1234567890123456').trim();
+        const clientCode = pubId.startsWith('ca-') ? pubId : 'ca-' + pubId;
+        const snippet = '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + clientCode + '" crossorigin="anonymous"><\/script>';
+        copyText(snippet, 'تم نسخ كود تفعيل Google AdSense');
+      });
+
+      document.getElementById('copyAdsTxtBtn').addEventListener('click', function () {
+        const pubId = (pubIdInput.value || 'pub-1234567890123456').trim().replace('ca-', '');
+        const line = 'google.com, ' + pubId + ', DIRECT, f08c47fec0942fa0';
+        copyText(line, 'تم نسخ سطر ملف ads.txt');
+      });
+
+      document.querySelectorAll('.copy-ad-code-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const slotType = btn.getAttribute('data-copy-ad');
+          const pubId = (pubIdInput.value || 'pub-1234567890123456').trim();
+          const clientCode = pubId.startsWith('ca-') ? pubId : 'ca-' + pubId;
+          const unitSnippet = '<ins class="adsbygoogle" style="display:block" data-ad-client="' + clientCode + '" data-ad-slot="100200300" data-ad-format="auto" data-full-width-responsive="true"></ins>\n<script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>';
+          copyText(unitSnippet, 'تم نسخ كود الوحدة الإعلانية (' + slotType + ')');
+        });
+      });
+
+      // ==================== LEGAL & CONTACT MODALS ====================
+      const legalModal = document.getElementById('legalModal');
+      const legalModalTitle = document.getElementById('legalModalTitle');
+      const legalModalContent = document.getElementById('legalModalContent');
+
+      const legalPages = {
+        privacy: {
+          title: 'سياسة الخصوصية (متوافقة مع Google AdSense)',
+          html: '<p>نحن في <strong>منصة أدواتي الذكية</strong> نولي أهمية قصوى لخصوصية زوارنا. توضح هذه الوثيقة أنواع المعلومات التي يتم جمعها وكيفية استخدامها وفق متطلبات برنامج Google AdSense الإعلاني.</p>' +
+            '<h4 class="font-bold text-slate-900 dark:text-white">1. ملفات تعريف الارتباط وإعلانات Google DART</h4>' +
+            '<p>تستخدم شركة جوجل بصفتها مورداً خارجياً ملفات تعريف الارتباط (Cookies) لعرض الإعلانات على موقعنا. يتيح استخدام ملف تعريف الارتباط DART لشركة جوجل عرض الإعلانات للمستخدمين استناداً إلى زياراتهم لموقعنا والمواقع الأخرى على الإنترنت.</p>' +
+            '<h4 class="font-bold text-slate-900 dark:text-white">2. معالجة البيانات داخل المتصفح</h4>' +
+            '<p>جميع العمليات الحسابية وتحويل الصور والملفات تتم محلياً داخل متصفحك (Client-side) ولا يتم رفع ملفاتك الشخصية أو بياناتك المالية إلى أي خوادم خارجية.</p>'
+        },
+        terms: {
+          title: 'شروط الاستخدام وإخلاء المسؤولية',
+          html: '<p>باستخدامك لمنصة <strong>أدواتي الذكية</strong>، فإنك توافق على شروط الاستخدام التالية:</p>' +
+            '<ul class="list-disc pr-5 space-y-2">' +
+            '<li>تُقدم جميع الحاسبات المالية (الذهب، العملات، القروض) والحاسبات الصحية لأغراض استرشادية ومعلوماتية فقط.</li>' +
+            '<li>أسعار الذهب والعملات قابلة للتحديث اليدوي من قِبل المستخدم لمواكبة تغيرات السوق اللحظية وتفاوت المصنعية من تاجر لآخر.</li>' +
+            '<li>يُمنع نسخ المحتوى البرمجي أو المقالات الإرشادية دون إذن خطي مسبق.</li>' +
+            '</ul>'
+        },
+        about: {
+          title: 'من نحن',
+          html: '<p><strong>منصة أدواتي الذكية</strong> هي بوابة عربية متكاملة تهدف إلى تبسيط العمليات الحسابية المالية والصحية وتوفير أدوات تحويل الملفات والوحدات مجاناً وبأعلى سرعة ودقة للمستخدم العربي.</p>'
+        },
+        contact: {
+          title: 'اتصل بنا',
+          html: '<p class="mb-3">يسعدنا تواصلك معنا لأي استفسارات أو مقترحات أو طلبات إعلانية مباشرة:</p>' +
+            '<form id="modalContactForm" class="space-y-3">' +
+            '<div><label class="block text-xs font-bold mb-1">الاسم الكامل</label><input type="text" required placeholder="أدخل اسمك" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm" /></div>' +
+            '<div><label class="block text-xs font-bold mb-1">البريد الإلكتروني</label><input type="email" required placeholder="name@example.com" class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm" /></div>' +
+            '<div><label class="block text-xs font-bold mb-1">رسالتك</label><textarea rows="3" required placeholder="اكتب رسالتك أو اقتراحك هنا..." class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl px-3 py-2 text-sm"></textarea></div>' +
+            '<button type="submit" class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-xl text-sm font-bold">إرسال الرسالة</button>' +
+            '</form>'
+        }
+      };
+
+      document.querySelectorAll('.open-legal-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const key = btn.getAttribute('data-modal');
+          const page = legalPages[key];
+          if (!page) return;
+          legalModalTitle.textContent = page.title;
+          legalModalContent.innerHTML = page.html;
+          legalModal.classList.remove('hidden');
+
+          const form = document.getElementById('modalContactForm');
+          if (form) {
+            form.addEventListener('submit', function (ev) {
+              ev.preventDefault();
+              legalModal.classList.add('hidden');
+              showToast('تم إرسال رسالتك بنجاح! سنرد عليك قريباً.');
+            });
+          }
+        });
+      });
+
+      document.getElementById('closeLegalModalBtn').addEventListener('click', function () {
+        legalModal.classList.add('hidden');
+      });
+
+      legalModal.addEventListener('click', function (e) {
+        if (e.target === legalModal) {
+          legalModal.classList.add('hidden');
+        }
+      });
+
+      // Initialize all calculators on load
+      updateGoldCalculator();
+      updateCurrencyConverter();
+      updateLoanCalculator();
+      drawSampleArtwork();
+      populateUnitSelects();
+      updateAgeCalculator();
+      updateHealthCalculator();
+      updateAdsenseSimulator();
+    })();
+  </script>
+</body>
+</html>

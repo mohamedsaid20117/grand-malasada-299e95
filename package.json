@@ -1,0 +1,13 @@
+{
+  "name": "smart-tools-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arabic Smart Tools & Calculators Hub (AdSense Ready)",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'No build step required - static HTML/JS bundle ready'"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
